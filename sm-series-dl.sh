@@ -153,9 +153,9 @@ _max_epnum=25
 
 for season in {3..18}
 do
-	for ((epnum=1; $epnum -lt $_max_epnum; epnum++))
+	for ((epnum=1; $epnum < $_max_epnum; epnum++))
 	do
-		for ((attempts=10; $attempts -gt 0; attempts--))
+		for ((attempts=10; $attempts > 0; attempts--))
 		do
 			if _try_download_ep_ "$_series" "$season" "$epnum"
 			then
